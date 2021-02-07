@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pfs.css">
+  <title>clue #1</title>
+  <link rel="icon" type="image/png" href="images/clue.png">
+
+  <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "stumped at gridley") {
+    return true;
+   }
+   alert("Fail! Try again. *spaces count*");
+   return false;
+   }
+ </script>
+
+</head>
+
+<body id="clue1">
+  <img src="images/openenvel.png" id="openenvel">
+<div id="cluepass">
+ <p>2Q20 Q=_</p>
+ <p>234mped a3 g1idle8: <input id="passwordBox" type="password"/></p>
+ <a href="gridley.html" onclick="return checkPassword();">
+  submit clue
+ </a></div>
+
+
+</body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pfs.css">
+  <title>Gardner Park</title>
+  <link rel="icon" type="image/png" href="images/clue.png">
+
+<script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "the slide") {
+    return true;
+   }
+   alert("Fail! Try again. *hint: refer to 1Q84*");
+   return false;
+   }
+ </script>
+
+</head>
+
+<body id="gardnerpark">
+	<div id="gardnersign">
+	<img src="images/gardnersign.png">
+			<div id="gardnerpass">
+    <p>where will i be at the park?<br><input id="passwordBox" type="password"/></p>
+ <a href="theslide.html" onclick="return checkPassword();">
+  submit clue
+ </a>
+</div>
+
+</body>

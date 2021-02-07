@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pfs.css">
+  <title>Reading..</title>
+  <link rel="icon" type="image/png" href="images/clue.png">
+
+<script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "195") {
+    return true;
+   }
+   alert("Fail! Try again. *number only*");
+   return false;
+   }
+ </script>
+
+</head>
+
+<body> 
+  <div id="windupbird">
+
+	<img src="images/openbook.png" id="openbook">
+  <img src="images/windupbird.png" id="wubtext">
+	<div id="wellcluepass"> 
+		<p>year</p>
+    <p>_ _ _ <s>_</s> <i>st.</i> <input id="passwordBox" type="password"/></p>
+ <a href="195alley.html" onclick="return checkPassword();">
+  submit clue
+ </a>
+
+
+</div>
+</body>
